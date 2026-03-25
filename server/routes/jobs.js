@@ -55,6 +55,7 @@ router.get("/", auth, async (req, res) => {
         pages: Math.ceil(total / parsedLimit),
       },
     });
+    
   } catch (err) {
     console.error("Jobs fetch error:", err);
     res.status(500).json({ message: "Server error" });

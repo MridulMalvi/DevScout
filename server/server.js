@@ -38,6 +38,7 @@ async function start() {
   app.listen(PORT, () => {
     console.log(`🚀 DevScout server running on http://localhost:${PORT}`);
   });
+  
 }
 
 start();

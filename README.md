@@ -3,14 +3,12 @@
 An IT job aggregation platform that fetches and displays tech job listings across six domains — behind a secure authenticated dashboard.
 
 ## Tech Stack
-
 - **Frontend:** React 18, Vite, Tailwind CSS, React Router v6
 - **Backend:** Node.js, Express, MongoDB (Mongoose)
 - **Auth:** JWT via httpOnly cookies (7-day sessions)
 - **Jobs:** JSearch API (RapidAPI) · auto-refreshed twice daily via `node-cron`
 
 ## Project Structure
-
 ```
 DevScout/
 ├── client/          # React + Vite frontend
@@ -70,7 +68,6 @@ cd server && npm run dev
 # Terminal 2 — frontend
 cd client && npm run dev
 ```
-
 Open [http://localhost:5173](http://localhost:5173), register an account, and start browsing.
 
 ## API Endpoints
@@ -98,5 +95,4 @@ Open [http://localhost:5173](http://localhost:5173), register an account, and st
 | `client/` | `npm run build` | Production build |
 
 ## License
-
 [MIT](LICENSE)

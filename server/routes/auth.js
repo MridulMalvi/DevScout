@@ -6,10 +6,12 @@ const auth = require("../middleware/auth");
 
 const router = express.Router();
 
+const IS_PROD = process.env.NODE_ENV === "production" || process.env.VERCEL;
+
 const COOKIE_OPTIONS = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  sameSite: "lax",
+  secure: IS_PROD,
+  sameSite: IS_PROD ? "none" : "lax",
   maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
 };
 

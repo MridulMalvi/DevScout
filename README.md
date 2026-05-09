@@ -1,6 +1,6 @@
 # DevScout
 
-An IT job aggregation platform that fetches and displays tech job listings across six domains — behind a secure authenticated dashboard.
+An IT job aggregation platform that fetches and displays tech job listings across six domains - behind a secure authenticated dashboard.
 
 ## Tech Stack
 - **Frontend:** React 18, Vite, Tailwind CSS, React Router v6
